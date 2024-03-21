@@ -1,4 +1,4 @@
-<?php 
+<?php
 require_once('./db/DB_connection.php');
 require_once('./db/DB_login.php');
 ?>
@@ -7,43 +7,33 @@ require_once('./db/DB_login.php');
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width,instal-scale=1.0">
-    <title>kasir pak kusir</title>
-    <link rel="stylesheet"href="./assets/style/login.css">
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AE | Login</title>
+    <link rel="stylesheet" href="./assets/style/login.css">
 </head>
 <body>
     <div class="container">
-        <img style="width: 100px; margin-bottom: 2rem;"src="./assets/images/ikhsan.png" alt="shopiria logo">        
+        <img style="width: 100px; margin-bottom: 2rem;" src="./assets/images/aarm.jpg" alt="AE">
         <form method="POST">
-            <?php if (isset($error_message)):?>
-                <div class="error*massager"><?php echo $error_massage; ?></div>
-                <?php endif; ?>
+            <?php if (isset($error_message)) : ?>
+                <div class="error-message"><?php echo $error_message; ?></div>
+            <?php endif; ?>
             <div>
-                <label for="username">username</label>
-                <input id="username" name="username" type="text" placeholder="username" required>
+                <label for="username">Username</label>
+                <input id="username" name="username" type="text" placeholder="Username" required>
             </div>
 
             <div>
-                <label for="password">password</label>
-                <input id="password" name="password" placeholder="*****" required> 
+                <label for="password">Password</label>
+                <input id="password" name="password" type="password" placeholder="">
             </div>
             <div>
-                <button type="submit">sign in</button>
+                <button type="submit">Sign In</button>
             </div>
-            <div class ="text-center mt-4">
-                <p>don't have an account? <a href="./pages/register.php">register here</a></p>   
+            <div class="text-center mt-4">
+                 <p>Don't have an account? <a href="./pages/register.php">Register here</a></p>
             </div>
-            </from>
-            </di>
-            </body>
-            </html>
-
-                                    
-
-
-           
-
-
-
-
+        </form>
+    </div>
+</body>
+</html>

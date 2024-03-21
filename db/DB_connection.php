@@ -2,14 +2,12 @@
 $servername = "localhost";
 $username = "root";
 $password = "";
-$dbnama = "db_cashier";
+$dbname = "db_cashier2";
 
-$conn = new mysqli($servername,$username,$password, $dbnama);
+$conn = new mysqli($servername, $username, $password, $dbname);
 
-if ($conn->connect_error){
-    die("connection failed: ". $conn->connect_error);
+if($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
 }
-
-echo "";
-
+echo"";
 ?>

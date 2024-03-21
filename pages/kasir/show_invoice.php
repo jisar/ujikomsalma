@@ -24,7 +24,7 @@ $tanggal_bulan = date('d F Y H:i:s', strtotime($invoice_data['updated_at']));
 </head>
 <body>
     <div class="invoice-container">
-        <h1>Invoice</h1>
+        <h1>Produk</h1>
         <table>
             <tr>
                 <th>Product ID</th>
@@ -44,6 +44,6 @@ $tanggal_bulan = date('d F Y H:i:s', strtotime($invoice_data['updated_at']));
             </tr>
         </table>
     </div>
-    <button onclick="window.print()">Print Invoice</button>
+    <button onclick="window.print()">Print</button>
 </body>
 </html>
